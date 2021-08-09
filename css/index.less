@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?y45a3t');
-    src:  url('fonts/icomoon.eot?y45a3t#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?y45a3t') format('truetype'),
-      url('fonts/icomoon.woff?y45a3t') format('woff'),
-      url('fonts/icomoon.svg?y45a3t#icomoon') format('svg');
+    src:  url('../fonts/icomoon.eot?y45a3t');
+    src:  url('../fonts/icomoon.eot?y45a3t#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?y45a3t') format('truetype'),
+      url('../fonts/icomoon.woff?y45a3t') format('woff'),
+      url('../fonts/icomoon.svg?y45a3t#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -106,7 +106,7 @@ i {
 .header {
   height: 3.6rem;
 }
-.user {
+.userLog {
   float: left;
   margin-right: .4rem;
   border: .12rem solid #ebe9ec;
@@ -114,7 +114,7 @@ i {
     width: 2.4rem;
     height: 2.4rem;
 }
-.user img {
+.userLog img {
     width: 100%;
     height: 100%;
   }
@@ -128,12 +128,12 @@ i {
     height: .8rem;
     font-size: .48rem;
   }
-  .main {
+  .mainHead {
     width: 100%;
     display: flex;
 
   }
-  .left{
+  .company{
     position: relative;
     overflow: hidden;
     flex: 1;
@@ -143,7 +143,7 @@ i {
     box-shadow: .08rem .08rem .16rem #ccc;
     color: #fff;
   }
-  .left span:nth-child(1) {
+  .company span:nth-child(1) {
     display: inline-block;
     position: absolute;
     top: -2.08rem;
@@ -153,7 +153,7 @@ i {
     height: 6.2rem;
     background-color: #64b1ab;  
   }
-  .left span:nth-child(2) {
+  .company span:nth-child(2) {
     display: inline-block;
     position: absolute;
     top: 50px;
@@ -163,7 +163,7 @@ i {
     height: 6.2rem;
     background-color: #64b1ab;  
   }
-  .left span:nth-child(3) {
+  .company .authentication {
     box-sizing: border-box;
     display: block;
     position: absolute;
@@ -178,37 +178,37 @@ i {
     color: #64b1ab;
     border-radius: .16rem;
   }
-  .left span:nth-child(3)::before {
+  .company span:nth-child(3)::before {
     font-family: 'icomoon';
     content: '\e902';
     margin-right: .16rem;
   }
-  .left h5 {
+  .company h5 {
     position:absolute;
     top: -0.56rem;
     left: 2.8rem;
     font-size: .72rem;
   }
- .left .daiban {
+ .company .agencyCompany {
     position: absolute;
     font-size: .64rem;
     top: 1.36rem;
     left:-0.2rem;
     margin: .4rem 0 0 .8rem;
   }
-  .left .shuxia {
+  .company .staffNumber {
     position: absolute;
     top: 2.32rem;
     right: .76rem;
     font-size: .48rem;
   }
-  .left .yewu {
+  .company .businessNumber {
     position: absolute;
     right: .76rem;
     top: 3rem;
     font-size: .48rem;
   }
-  .you {
+  .myAgency {
     position: relative;
     overflow: hidden;
       flex: 1;
@@ -217,8 +217,9 @@ i {
       height: 4.6rem;
       border-radius: .32rem;
       box-shadow: .08rem .08rem .16rem #ccc;
+      color: #fff;
   }
-  .you span:nth-child(1) {
+  .myAgency span:nth-child(1) {
     display: inline-block;
     position: absolute;
     top: -2.08rem;
@@ -228,7 +229,7 @@ i {
     height: 6.2rem;
     background-color: #265ef1;  
   }
-  .you span:nth-child(2) {
+  .myAgency span:nth-child(2) {
     display: inline-block;
     position: absolute;
     top: 50px;
@@ -238,13 +239,13 @@ i {
     height: 6.2rem;
     background-color: #265ef1;  
   }
-  .you h5 {
+  .myAgency h5 {
     position:absolute;
     top: -0.56rem;
     left: .8rem;
     font-size: .72rem;
   }
-  .you h5::before {
+  .myAgency h5::before {
     content: '实';
     padding: 0 .16rem 0;
     margin-right: .2rem;
@@ -254,25 +255,25 @@ i {
     border-radius: .16rem;
     background-color: #fff;
   }
- .you .daiban {
+ .myAgency .order {
     position: absolute;
     font-size: .64rem;
     top: 1.36rem;
     margin: .4rem 0 0 .8rem;
   }
-  .you .shuxia {
+  .myAgency .popularity {
     position: absolute;
     top: 2.32rem;
     right: 1.32rem;
     font-size: .48rem;
   }
-  .you .yewu {
+  .myAgency .member {
     position: absolute;
     right: .6rem;
     top: 3rem;
     font-size: .48rem;
   }
-  .you .yewu::after {
+  .myAgency .member::after {
     content: '?';
     display: inline-block;
     margin-left: .28rem;
@@ -284,23 +285,12 @@ i {
     text-align: center;
     background-color: #fff;
   }
-  .you {
-    position: relative;
-    overflow: hidden;
-      flex: 1;
-      margin-left: .4rem;
-      background:rgba(45, 108, 237, 1);
-      height: 4.6rem;
-      border-radius: .32rem;
-      box-shadow: .08rem .08rem .16rem #ccc;
-      color: #fff;
-  }
-  .main_2 {
+  .mainMiddle {
     margin-top: .4rem;
     width: 100%;
     display: flex;
     color: #fff;
-    .dan {
+    .myCollection {
       position: relative;
       overflow: hidden;
       flex: 1;
@@ -335,7 +325,7 @@ i {
           left: .5rem;
           font-size: .72rem;
         }
-        p {
+        .collectionNumber {
           position: absolute;
           font-size: .64rem;
           top: 1.36rem;
@@ -343,7 +333,7 @@ i {
           margin: .4rem 0 0 .8rem;
         }
     }
-    .shuang  {
+    .mainMiddleRight  {
       display: flex;
       flex-direction: column;
         flex: 1;
@@ -354,7 +344,7 @@ i {
           height: 2.2rem;
           border-radius: .32rem;
         }
-        .shang {
+        .myMessage {
           background: rgba(250, 139, 145, .9);
           position: relative;
           overflow: hidden;
@@ -390,7 +380,7 @@ i {
             font-size: .48rem;
           }
         }
-        .xia {
+        .myClue {
           position: relative;
           overflow: hidden;
           margin-top: .2rem;
@@ -429,7 +419,7 @@ i {
         }
     }
   }
-  .main_3 {
+  .mainBottom {
     box-shadow: .08rem .08rem .16rem #ccc;
     position: relative;
     margin-top: .4rem;
@@ -474,7 +464,7 @@ i {
       color:#cfb9ff;
     }
   }
-  .news {
+  .reminder {
     margin-top: 1.72rem;
     font-size: .56rem;
     dl {
@@ -494,7 +484,7 @@ i {
       color: #969696;
     }
   }
-  .kong {
+  .emptyBox {
     position: relative;
     height: 1.2rem;
     overflow: hidden;
@@ -529,13 +519,44 @@ i {
       background-color: #fff;
       border-radius: 50%;
     }
-    .zuo {
+    .policy {
       width: 5.6rem;
       float: left;
       line-height: 1.6rem;
       text-align: center;
+      &:nth-child(1) i {
+        font-family: 'icomoon';
+        display: inline-block;
+        font-size: .8rem;
+      }
     }
-    .rig {
+    .nearbyAgency {
+      position: absolute;
+      height: 2.6rem;
+      width: 2.6rem;
+      top: -0.56rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: -webkit-linear-gradient(left bottom,#3b8c9d,#a9d3c7);
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+      box-shadow:1px 1px 5px rgb(235, 233, 233),1px -1px 5px rgb(235, 233, 233),-1px 1px 5px rgb(235, 233, 233),-1px -1px 5px rgb(235, 233, 233);
+      i {
+        display: inline-block;
+        font-family: 'icomoon';
+        font-size: 1.2rem;
+        transform-origin: center;
+        transform: rotate(30deg);
+      }
+      p{ 
+        position: absolute;
+        top: .92rem;
+        left: .4rem;
+        font-size: .48rem;
+      }
+    }
+    .myInterface {
       width: 5.6rem;
       float: right;
       line-height: 1.6rem;
@@ -567,40 +588,7 @@ i {
           right: .12rem;
         }
         }
-      
-
     }
-
-     .zuo:nth-child(1) i {
-      font-family: 'icomoon';
-      display: inline-block;
-      font-size: .8rem;
-    }
-    .neiyuan {
-      position: absolute;
-      height: 2.6rem;
-      width: 2.6rem;
-      top: -0.56rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background: -webkit-linear-gradient(left bottom,#3b8c9d,#a9d3c7);
-      border-radius: 50%;
-      color: #fff;
-      text-align: center;
-      box-shadow:1px 1px 5px rgb(235, 233, 233),1px -1px 5px rgb(235, 233, 233),-1px 1px 5px rgb(235, 233, 233),-1px -1px 5px rgb(235, 233, 233);
-      i {
-        display: inline-block;
-        font-family: 'icomoon';
-        font-size: 1.2rem;
-        transform-origin: center;
-        transform: rotate(30deg);
-      }
-      p{ 
-        position: absolute;
-        top: .92rem;
-        left: .4rem;
-        font-size: .48rem;
-      }
-    }
+    
 
    }

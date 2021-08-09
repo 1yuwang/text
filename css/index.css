@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'icomoon';
-  src: url('fonts/icomoon.eot?y45a3t');
-  src: url('fonts/icomoon.eot?y45a3t#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?y45a3t') format('truetype'), url('fonts/icomoon.woff?y45a3t') format('woff'), url('fonts/icomoon.svg?y45a3t#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?y45a3t');
+  src: url('../fonts/icomoon.eot?y45a3t#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?y45a3t') format('truetype'), url('../fonts/icomoon.woff?y45a3t') format('woff'), url('../fonts/icomoon.svg?y45a3t#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -100,7 +100,7 @@ i {
 .header {
   height: 3.6rem;
 }
-.user {
+.userLog {
   float: left;
   margin-right: 0.4rem;
   border: 0.12rem solid #ebe9ec;
@@ -108,7 +108,7 @@ i {
   width: 2.4rem;
   height: 2.4rem;
 }
-.user img {
+.userLog img {
   width: 100%;
   height: 100%;
 }
@@ -122,11 +122,11 @@ i {
   height: 0.8rem;
   font-size: 0.48rem;
 }
-.main {
+.mainHead {
   width: 100%;
   display: flex;
 }
-.left {
+.company {
   position: relative;
   overflow: hidden;
   flex: 1;
@@ -136,7 +136,7 @@ i {
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
   color: #fff;
 }
-.left span:nth-child(1) {
+.company span:nth-child(1) {
   display: inline-block;
   position: absolute;
   top: -2.08rem;
@@ -146,7 +146,7 @@ i {
   height: 6.2rem;
   background-color: #64b1ab;
 }
-.left span:nth-child(2) {
+.company span:nth-child(2) {
   display: inline-block;
   position: absolute;
   top: 50px;
@@ -156,7 +156,7 @@ i {
   height: 6.2rem;
   background-color: #64b1ab;
 }
-.left span:nth-child(3) {
+.company .authentication {
   box-sizing: border-box;
   display: block;
   position: absolute;
@@ -171,37 +171,37 @@ i {
   color: #64b1ab;
   border-radius: 0.16rem;
 }
-.left span:nth-child(3)::before {
+.company span:nth-child(3)::before {
   font-family: 'icomoon';
   content: '\e902';
   margin-right: 0.16rem;
 }
-.left h5 {
+.company h5 {
   position: absolute;
   top: -0.56rem;
   left: 2.8rem;
   font-size: 0.72rem;
 }
-.left .daiban {
+.company .agencyCompany {
   position: absolute;
   font-size: 0.64rem;
   top: 1.36rem;
   left: -0.2rem;
   margin: 0.4rem 0 0 0.8rem;
 }
-.left .shuxia {
+.company .staffNumber {
   position: absolute;
   top: 2.32rem;
   right: 0.76rem;
   font-size: 0.48rem;
 }
-.left .yewu {
+.company .businessNumber {
   position: absolute;
   right: 0.76rem;
   top: 3rem;
   font-size: 0.48rem;
 }
-.you {
+.myAgency {
   position: relative;
   overflow: hidden;
   flex: 1;
@@ -210,8 +210,9 @@ i {
   height: 4.6rem;
   border-radius: 0.32rem;
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
+  color: #fff;
 }
-.you span:nth-child(1) {
+.myAgency span:nth-child(1) {
   display: inline-block;
   position: absolute;
   top: -2.08rem;
@@ -221,7 +222,7 @@ i {
   height: 6.2rem;
   background-color: #265ef1;
 }
-.you span:nth-child(2) {
+.myAgency span:nth-child(2) {
   display: inline-block;
   position: absolute;
   top: 50px;
@@ -231,13 +232,13 @@ i {
   height: 6.2rem;
   background-color: #265ef1;
 }
-.you h5 {
+.myAgency h5 {
   position: absolute;
   top: -0.56rem;
   left: 0.8rem;
   font-size: 0.72rem;
 }
-.you h5::before {
+.myAgency h5::before {
   content: '实';
   padding: 0 0.16rem 0;
   margin-right: 0.2rem;
@@ -247,25 +248,25 @@ i {
   border-radius: 0.16rem;
   background-color: #fff;
 }
-.you .daiban {
+.myAgency .order {
   position: absolute;
   font-size: 0.64rem;
   top: 1.36rem;
   margin: 0.4rem 0 0 0.8rem;
 }
-.you .shuxia {
+.myAgency .popularity {
   position: absolute;
   top: 2.32rem;
   right: 1.32rem;
   font-size: 0.48rem;
 }
-.you .yewu {
+.myAgency .member {
   position: absolute;
   right: 0.6rem;
   top: 3rem;
   font-size: 0.48rem;
 }
-.you .yewu::after {
+.myAgency .member::after {
   content: '?';
   display: inline-block;
   margin-left: 0.28rem;
@@ -277,24 +278,13 @@ i {
   text-align: center;
   background-color: #fff;
 }
-.you {
-  position: relative;
-  overflow: hidden;
-  flex: 1;
-  margin-left: 0.4rem;
-  background: #2d6ced;
-  height: 4.6rem;
-  border-radius: 0.32rem;
-  box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
-  color: #fff;
-}
-.main_2 {
+.mainMiddle {
   margin-top: 0.4rem;
   width: 100%;
   display: flex;
   color: #fff;
 }
-.main_2 .dan {
+.mainMiddle .myCollection {
   position: relative;
   overflow: hidden;
   flex: 1;
@@ -304,7 +294,7 @@ i {
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
   color: #fff;
 }
-.main_2 .dan span:nth-child(1) {
+.mainMiddle .myCollection span:nth-child(1) {
   display: inline-block;
   position: absolute;
   top: -2.08rem;
@@ -314,7 +304,7 @@ i {
   height: 6.2rem;
   background-color: #f8a442;
 }
-.main_2 .dan span:nth-child(2) {
+.mainMiddle .myCollection span:nth-child(2) {
   display: inline-block;
   position: absolute;
   top: 50px;
@@ -324,38 +314,38 @@ i {
   height: 6.2rem;
   background-color: #f8a442;
 }
-.main_2 .dan h5 {
+.mainMiddle .myCollection h5 {
   position: absolute;
   top: -0.5rem;
   left: 0.5rem;
   font-size: 0.72rem;
 }
-.main_2 .dan p {
+.mainMiddle .myCollection .collectionNumber {
   position: absolute;
   font-size: 0.64rem;
   top: 1.36rem;
   left: -0.2rem;
   margin: 0.4rem 0 0 0.8rem;
 }
-.main_2 .shuang {
+.mainMiddle .mainMiddleRight {
   display: flex;
   flex-direction: column;
   flex: 1;
   margin-left: 0.4rem;
   height: 4.6rem;
 }
-.main_2 .shuang div {
+.mainMiddle .mainMiddleRight div {
   flex: 1;
   height: 2.2rem;
   border-radius: 0.32rem;
 }
-.main_2 .shuang .shang {
+.mainMiddle .mainMiddleRight .myMessage {
   background: rgba(250, 139, 145, 0.9);
   position: relative;
   overflow: hidden;
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
 }
-.main_2 .shuang .shang span:nth-child(1) {
+.mainMiddle .mainMiddleRight .myMessage span:nth-child(1) {
   width: 5.6rem;
   height: 5.6rem;
   position: absolute;
@@ -364,7 +354,7 @@ i {
   background-color: #fd686a;
   border-radius: 50%;
 }
-.main_2 .shuang .shang span:nth-child(2) {
+.mainMiddle .mainMiddleRight .myMessage span:nth-child(2) {
   width: 5.6rem;
   height: 5.6rem;
   position: absolute;
@@ -373,26 +363,26 @@ i {
   background-color: #fd686a;
   border-radius: 50%;
 }
-.main_2 .shuang .shang h6 {
+.mainMiddle .mainMiddleRight .myMessage h6 {
   position: absolute;
   top: -1.08rem;
   left: 0.8rem;
   font-size: 0.72rem;
 }
-.main_2 .shuang .shang p {
+.mainMiddle .mainMiddleRight .myMessage p {
   position: relative;
   top: 0.28rem;
   left: 3.76rem;
   font-size: 0.48rem;
 }
-.main_2 .shuang .xia {
+.mainMiddle .mainMiddleRight .myClue {
   position: relative;
   overflow: hidden;
   margin-top: 0.2rem;
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
   background: rgba(247, 220, 107, 0.9);
 }
-.main_2 .shuang .xia span:nth-child(1) {
+.mainMiddle .mainMiddleRight .myClue span:nth-child(1) {
   width: 5.6rem;
   height: 5.6rem;
   position: absolute;
@@ -401,7 +391,7 @@ i {
   background-color: #f8c840;
   border-radius: 50%;
 }
-.main_2 .shuang .xia span:nth-child(2) {
+.mainMiddle .mainMiddleRight .myClue span:nth-child(2) {
   width: 5.6rem;
   height: 5.6rem;
   position: absolute;
@@ -410,19 +400,19 @@ i {
   background-color: #f8c840;
   border-radius: 50%;
 }
-.main_2 .shuang .xia h6 {
+.mainMiddle .mainMiddleRight .myClue h6 {
   position: absolute;
   top: -1.08rem;
   left: 0.8rem;
   font-size: 0.72rem;
 }
-.main_2 .shuang .xia p {
+.mainMiddle .mainMiddleRight .myClue p {
   position: relative;
   top: 0.28rem;
   left: 3.76rem;
   font-size: 0.48rem;
 }
-.main_3 {
+.mainBottom {
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
   position: relative;
   margin-top: 0.4rem;
@@ -433,7 +423,7 @@ i {
   overflow: hidden;
   color: #fff;
 }
-.main_3 span:nth-child(1) {
+.mainBottom span:nth-child(1) {
   display: inline-block;
   position: absolute;
   top: -2.8rem;
@@ -443,7 +433,7 @@ i {
   border-radius: 100%;
   background-color: #6b3efd;
 }
-.main_3 span:nth-child(2) {
+.mainBottom span:nth-child(2) {
   display: inline-block;
   position: absolute;
   top: 1rem;
@@ -453,45 +443,45 @@ i {
   border-top-right-radius: 100%;
   background-color: #6b3efd;
 }
-.main_3 h6 {
+.mainBottom h6 {
   position: absolute;
   font-size: 0.72rem;
   top: -1.32rem;
   margin-left: 1.2rem;
 }
-.main_3 p {
+.mainBottom p {
   position: absolute;
   top: 0.76rem;
   font-size: 0.64rem;
   margin-left: 1.2rem;
   color: #cfb9ff;
 }
-.news {
+.reminder {
   margin-top: 1.72rem;
   font-size: 0.56rem;
 }
-.news dl {
+.reminder dl {
   margin: 0;
 }
-.news dd {
+.reminder dd {
   margin: 0;
 }
-.news h6 {
+.reminder h6 {
   margin: 0;
   font-size: 0.72rem;
   font-weight: 400;
   color: #626262;
 }
-.news p {
+.reminder p {
   margin: 0;
   color: #969696;
 }
-.kong {
+.emptyBox {
   position: relative;
   height: 1.2rem;
   overflow: hidden;
 }
-.kong::before {
+.emptyBox::before {
   content: '';
   display: inline-block;
   position: absolute;
@@ -521,20 +511,51 @@ i {
   background-color: #fff;
   border-radius: 50%;
 }
-.footer .zuo {
+.footer .policy {
   width: 5.6rem;
   float: left;
   line-height: 1.6rem;
   text-align: center;
 }
-.footer .rig {
+.footer .policy:nth-child(1) i {
+  font-family: 'icomoon';
+  display: inline-block;
+  font-size: 0.8rem;
+}
+.footer .nearbyAgency {
+  position: absolute;
+  height: 2.6rem;
+  width: 2.6rem;
+  top: -0.56rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: -webkit-linear-gradient(left bottom, #3b8c9d, #a9d3c7);
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 1px 1px 5px #ebe9e9, 1px -1px 5px #ebe9e9, -1px 1px 5px #ebe9e9, -1px -1px 5px #ebe9e9;
+}
+.footer .nearbyAgency i {
+  display: inline-block;
+  font-family: 'icomoon';
+  font-size: 1.2rem;
+  transform-origin: center;
+  transform: rotate(30deg);
+}
+.footer .nearbyAgency p {
+  position: absolute;
+  top: 0.92rem;
+  left: 0.4rem;
+  font-size: 0.48rem;
+}
+.footer .myInterface {
   width: 5.6rem;
   float: right;
   line-height: 1.6rem;
   color: #448d93;
   text-align: center;
 }
-.footer .rig i {
+.footer .myInterface i {
   width: 0.8rem;
   height: 0.8rem;
   position: relative;
@@ -545,7 +566,7 @@ i {
   vertical-align: top;
   text-shadow: 2px 2px 2px #d2efed, 2px -2px 2px #d2efed, -2px 2px 2px #d2efed, -2px -2px 2px #d2efed;
 }
-.footer .rig i::before {
+.footer .myInterface i::before {
   z-index: -1;
   content: '99';
   color: #fff;
@@ -559,35 +580,4 @@ i {
   text-shadow: none;
   top: -0.28rem;
   right: 0.12rem;
-}
-.footer .zuo:nth-child(1) i {
-  font-family: 'icomoon';
-  display: inline-block;
-  font-size: 0.8rem;
-}
-.footer .neiyuan {
-  position: absolute;
-  height: 2.6rem;
-  width: 2.6rem;
-  top: -0.56rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: -webkit-linear-gradient(left bottom, #3b8c9d, #a9d3c7);
-  border-radius: 50%;
-  color: #fff;
-  text-align: center;
-  box-shadow: 1px 1px 5px #ebe9e9, 1px -1px 5px #ebe9e9, -1px 1px 5px #ebe9e9, -1px -1px 5px #ebe9e9;
-}
-.footer .neiyuan i {
-  display: inline-block;
-  font-family: 'icomoon';
-  font-size: 1.2rem;
-  transform-origin: center;
-  transform: rotate(30deg);
-}
-.footer .neiyuan p {
-  position: absolute;
-  top: 0.92rem;
-  left: 0.4rem;
-  font-size: 0.48rem;
 }

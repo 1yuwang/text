@@ -78,9 +78,9 @@ a {
   }
 }
 body {
+  margin: 0 auto;
   min-width: 320px;
   width: 15rem;
-  margin: 0 auto;
   line-height: 1.5;
   font-family: Arial, Helvetica;
 }
@@ -91,9 +91,9 @@ i {
   padding: 0 0.6rem;
 }
 .exit {
-  font-family: 'icomoon';
   position: relative;
   height: 2.8rem;
+  font-family: 'icomoon';
   font-size: 0.694444rem;
   text-align: right;
 }
@@ -103,10 +103,10 @@ i {
 .userLog {
   float: left;
   margin-right: 0.4rem;
-  border: 0.12rem solid #ebe9ec;
-  border-radius: 50%;
   width: 2.4rem;
   height: 2.4rem;
+  border: 0.12rem solid #ebe9ec;
+  border-radius: 50%;
 }
 .userLog img {
   width: 100%;
@@ -123,27 +123,27 @@ i {
   font-size: 0.48rem;
 }
 .mainHead {
-  width: 100%;
   display: flex;
+  width: 100%;
 }
 .company {
   position: relative;
-  overflow: hidden;
   flex: 1;
-  background-color: rgba(108, 176, 175, 0.9);
   height: 4.6rem;
   border-radius: 0.32rem;
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
+  background-color: rgba(108, 176, 175, 0.9);
   color: #fff;
+  overflow: hidden;
 }
 .company span:nth-child(1) {
   display: inline-block;
   position: absolute;
   top: -2.08rem;
   right: -1.28rem;
-  border-radius: 50%;
   width: 6.2rem;
   height: 6.2rem;
+  border-radius: 50%;
   background-color: #64b1ab;
 }
 .company span:nth-child(2) {
@@ -151,9 +151,9 @@ i {
   position: absolute;
   top: 50px;
   left: -3.88rem;
-  border-radius: 50%;
   width: 6.2rem;
   height: 6.2rem;
+  border-radius: 50%;
   background-color: #64b1ab;
 }
 .company .authentication {
@@ -162,19 +162,19 @@ i {
   position: absolute;
   top: 0.8rem;
   left: 0.6rem;
+  padding-right: 0.28rem;
   width: 2rem;
   height: 0.68rem;
-  text-align: right;
-  padding-right: 0.28rem;
+  border-radius: 0.16rem;
   background-color: #fff;
+  text-align: right;
   font-size: 0.4rem;
   color: #64b1ab;
-  border-radius: 0.16rem;
 }
 .company span:nth-child(3)::before {
-  font-family: 'icomoon';
   content: '\e902';
   margin-right: 0.16rem;
+  font-family: 'icomoon';
 }
 .company h5 {
   position: absolute;
@@ -184,10 +184,10 @@ i {
 }
 .company .agencyCompany {
   position: absolute;
-  font-size: 0.64rem;
   top: 1.36rem;
   left: -0.2rem;
   margin: 0.4rem 0 0 0.8rem;
+  font-size: 0.64rem;
 }
 .company .staffNumber {
   position: absolute;
@@ -203,23 +203,23 @@ i {
 }
 .myAgency {
   position: relative;
-  overflow: hidden;
   flex: 1;
   margin-left: 0.4rem;
-  background: #2d6ced;
   height: 4.6rem;
   border-radius: 0.32rem;
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
+  background: #2d6ced;
   color: #fff;
+  overflow: hidden;
 }
 .myAgency span:nth-child(1) {
   display: inline-block;
   position: absolute;
   top: -2.08rem;
   right: -1.28rem;
-  border-radius: 50%;
   width: 6.2rem;
   height: 6.2rem;
+  border-radius: 50%;
   background-color: #265ef1;
 }
 .myAgency span:nth-child(2) {
@@ -227,9 +227,9 @@ i {
   position: absolute;
   top: 50px;
   left: -3.88rem;
-  border-radius: 50%;
   width: 6.2rem;
   height: 6.2rem;
+  border-radius: 50%;
   background-color: #265ef1;
 }
 .myAgency h5 {
@@ -242,17 +242,17 @@ i {
   content: '实';
   padding: 0 0.16rem 0;
   margin-right: 0.2rem;
+  border-radius: 0.16rem;
+  background-color: #fff;
   color: #265fee;
   font-size: 0.48rem;
   font-weight: 900;
-  border-radius: 0.16rem;
-  background-color: #fff;
 }
 .myAgency .order {
   position: absolute;
-  font-size: 0.64rem;
   top: 1.36rem;
   margin: 0.4rem 0 0 0.8rem;
+  font-size: 0.64rem;
 }
 .myAgency .popularity {
   position: absolute;
@@ -272,36 +272,36 @@ i {
   margin-left: 0.28rem;
   width: 0.56rem;
   height: 0.56rem;
+  background-color: #fff;
   border-radius: 50%;
   color: #265fee;
   line-height: 0.56rem;
   text-align: center;
-  background-color: #fff;
 }
 .mainMiddle {
+  display: flex;
   margin-top: 0.4rem;
   width: 100%;
-  display: flex;
   color: #fff;
 }
 .mainMiddle .myCollection {
   position: relative;
-  overflow: hidden;
   flex: 1;
-  background-color: rgba(252, 187, 107, 0.9);
   height: 4.6rem;
   border-radius: 0.32rem;
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
+  background-color: rgba(252, 187, 107, 0.9);
   color: #fff;
+  overflow: hidden;
 }
 .mainMiddle .myCollection span:nth-child(1) {
   display: inline-block;
   position: absolute;
   top: -2.08rem;
   right: -1.28rem;
-  border-radius: 50%;
   width: 6.2rem;
   height: 6.2rem;
+  border-radius: 50%;
   background-color: #f8a442;
 }
 .mainMiddle .myCollection span:nth-child(2) {
@@ -309,9 +309,9 @@ i {
   position: absolute;
   top: 50px;
   left: -3.88rem;
-  border-radius: 50%;
   width: 6.2rem;
   height: 6.2rem;
+  border-radius: 50%;
   background-color: #f8a442;
 }
 .mainMiddle .myCollection h5 {
@@ -322,10 +322,10 @@ i {
 }
 .mainMiddle .myCollection .collectionNumber {
   position: absolute;
-  font-size: 0.64rem;
   top: 1.36rem;
   left: -0.2rem;
   margin: 0.4rem 0 0 0.8rem;
+  font-size: 0.64rem;
 }
 .mainMiddle .mainMiddleRight {
   display: flex;
@@ -340,26 +340,26 @@ i {
   border-radius: 0.32rem;
 }
 .mainMiddle .mainMiddleRight .myMessage {
-  background: rgba(250, 139, 145, 0.9);
   position: relative;
-  overflow: hidden;
+  background: rgba(250, 139, 145, 0.9);
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
+  overflow: hidden;
 }
 .mainMiddle .mainMiddleRight .myMessage span:nth-child(1) {
-  width: 5.6rem;
-  height: 5.6rem;
   position: absolute;
   top: -3.2rem;
   right: -0.6rem;
-  background-color: #fd686a;
-  border-radius: 50%;
-}
-.mainMiddle .mainMiddleRight .myMessage span:nth-child(2) {
   width: 5.6rem;
   height: 5.6rem;
+  border-radius: 50%;
+  background-color: #fd686a;
+}
+.mainMiddle .mainMiddleRight .myMessage span:nth-child(2) {
   position: absolute;
   top: 0.2rem;
   left: -3.44rem;
+  width: 5.6rem;
+  height: 5.6rem;
   background-color: #fd686a;
   border-radius: 50%;
 }
@@ -377,26 +377,26 @@ i {
 }
 .mainMiddle .mainMiddleRight .myClue {
   position: relative;
-  overflow: hidden;
   margin-top: 0.2rem;
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
   background: rgba(247, 220, 107, 0.9);
+  overflow: hidden;
 }
 .mainMiddle .mainMiddleRight .myClue span:nth-child(1) {
-  width: 5.6rem;
-  height: 5.6rem;
   position: absolute;
   top: -3.2rem;
   right: -0.6rem;
+  width: 5.6rem;
+  height: 5.6rem;
   background-color: #f8c840;
   border-radius: 50%;
 }
 .mainMiddle .mainMiddleRight .myClue span:nth-child(2) {
-  width: 5.6rem;
-  height: 5.6rem;
   position: absolute;
   top: 0.2rem;
   left: -3.44rem;
+  width: 5.6rem;
+  height: 5.6rem;
   background-color: #f8c840;
   border-radius: 50%;
 }
@@ -413,15 +413,15 @@ i {
   font-size: 0.48rem;
 }
 .mainBottom {
-  box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
   position: relative;
   margin-top: 0.4rem;
   width: 100%;
   height: 2.6rem;
   background: rgba(124, 85, 252, 0.9);
   border-radius: 0.32rem;
-  overflow: hidden;
+  box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
   color: #fff;
+  overflow: hidden;
 }
 .mainBottom span:nth-child(1) {
   display: inline-block;
@@ -445,15 +445,15 @@ i {
 }
 .mainBottom h6 {
   position: absolute;
-  font-size: 0.72rem;
   top: -1.32rem;
   margin-left: 1.2rem;
+  font-size: 0.72rem;
 }
 .mainBottom p {
   position: absolute;
   top: 0.76rem;
-  font-size: 0.64rem;
   margin-left: 1.2rem;
+  font-size: 0.64rem;
   color: #cfb9ff;
 }
 .reminder {
@@ -495,9 +495,9 @@ i {
 }
 .footer {
   position: relative;
-  font-size: 0.56rem;
-  border-top: 1px solid #ddd;
   height: 1.6rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.56rem;
 }
 .footer::before {
   content: '';
@@ -512,35 +512,35 @@ i {
   border-radius: 50%;
 }
 .footer .policy {
-  width: 5.6rem;
   float: left;
+  width: 5.6rem;
   line-height: 1.6rem;
   text-align: center;
 }
 .footer .policy:nth-child(1) i {
-  font-family: 'icomoon';
   display: inline-block;
+  font-family: 'icomoon';
   font-size: 0.8rem;
 }
 .footer .nearbyAgency {
   position: absolute;
-  height: 2.6rem;
-  width: 2.6rem;
   top: -0.56rem;
   left: 50%;
   transform: translateX(-50%);
+  height: 2.6rem;
+  width: 2.6rem;
   background: -webkit-linear-gradient(left bottom, #3b8c9d, #a9d3c7);
   border-radius: 50%;
+  box-shadow: 1px 1px 5px #ebe9e9, 1px -1px 5px #ebe9e9, -1px 1px 5px #ebe9e9, -1px -1px 5px #ebe9e9;
   color: #fff;
   text-align: center;
-  box-shadow: 1px 1px 5px #ebe9e9, 1px -1px 5px #ebe9e9, -1px 1px 5px #ebe9e9, -1px -1px 5px #ebe9e9;
 }
 .footer .nearbyAgency i {
   display: inline-block;
-  font-family: 'icomoon';
-  font-size: 1.2rem;
   transform-origin: center;
   transform: rotate(30deg);
+  font-family: 'icomoon';
+  font-size: 1.2rem;
 }
 .footer .nearbyAgency p {
   position: absolute;
@@ -549,35 +549,35 @@ i {
   font-size: 0.48rem;
 }
 .footer .myInterface {
-  width: 5.6rem;
   float: right;
+  width: 5.6rem;
   line-height: 1.6rem;
   color: #448d93;
   text-align: center;
 }
 .footer .myInterface i {
+  position: relative;
+  padding-right: 0.32rem;
   width: 0.8rem;
   height: 0.8rem;
-  position: relative;
   font-family: 'icomoon';
-  padding-right: 0.32rem;
   color: #459f9d;
   font-size: 0.88rem;
-  vertical-align: top;
   text-shadow: 2px 2px 2px #d2efed, 2px -2px 2px #d2efed, -2px 2px 2px #d2efed, -2px -2px 2px #d2efed;
+  vertical-align: top;
 }
 .footer .myInterface i::before {
-  z-index: -1;
-  content: '99';
-  color: #fff;
+  position: absolute;
+  top: -0.28rem;
+  right: 0.12rem;
   height: 0.48rem;
   width: 0.48rem;
   border-radius: 50%;
   background-color: red;
+  content: '99';
+  color: #fff;
   font-size: 0.32rem;
-  position: absolute;
   line-height: 0.48rem;
   text-shadow: none;
-  top: -0.28rem;
-  right: 0.12rem;
+  z-index: -1;
 }

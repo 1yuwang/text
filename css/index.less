@@ -9,7 +9,6 @@
     font-style: normal;
     font-display: block;
   }
-  
 @no:15;
 html {
     font-size: 50px;
@@ -83,9 +82,9 @@ html {
     }
   }
 body{
-  min-width: 320px;
-  width:15rem;
     margin: 0 auto;
+    min-width: 320px;
+    width:15rem;
     line-height: 1.5;
     font-family: Arial, Helvetica;
 }
@@ -96,23 +95,22 @@ i {
     padding: 0 .6rem;
 }
 .exit {
-  font-family: 'icomoon';
     position: relative;
     height: 2.8rem;
+    font-family: 'icomoon';
     font-size: .694444rem;
     text-align: right;
 }
-
 .header {
   height: 3.6rem;
 }
 .userLog {
   float: left;
   margin-right: .4rem;
+  width: 2.4rem;
+  height: 2.4rem;
   border: .12rem solid #ebe9ec;
   border-radius: 50%;
-    width: 2.4rem;
-    height: 2.4rem;
 }
 .userLog img {
     width: 100%;
@@ -129,28 +127,28 @@ i {
     font-size: .48rem;
   }
   .mainHead {
-    width: 100%;
     display: flex;
-
+    width: 100%;
   }
   .company{
     position: relative;
-    overflow: hidden;
     flex: 1;
-    background-color: rgba(108, 176, 175,.9);
     height: 4.6rem;
     border-radius: .32rem;
     box-shadow: .08rem .08rem .16rem #ccc;
+    background-color: rgba(108, 176, 175,.9);
     color: #fff;
+    overflow: hidden;
+
   }
   .company span:nth-child(1) {
     display: inline-block;
     position: absolute;
     top: -2.08rem;
     right: -1.28rem;
-    border-radius: 50%;
     width: 6.2rem;
     height: 6.2rem;
+    border-radius: 50%;
     background-color: #64b1ab;  
   }
   .company span:nth-child(2) {
@@ -158,9 +156,9 @@ i {
     position: absolute;
     top: 50px;
     left: -3.88rem;
-    border-radius: 50%;
     width: 6.2rem;
     height: 6.2rem;
+    border-radius: 50%;
     background-color: #64b1ab;  
   }
   .company .authentication {
@@ -169,19 +167,19 @@ i {
     position: absolute;
     top: .8rem;
     left: .6rem;
+    padding-right: .28rem;
     width: 2rem;
     height: .68rem;
-    text-align: right;
-    padding-right: .28rem;
+    border-radius: .16rem;
     background-color: #fff;
+    text-align: right;
     font-size: .4rem;
     color: #64b1ab;
-    border-radius: .16rem;
   }
   .company span:nth-child(3)::before {
-    font-family: 'icomoon';
     content: '\e902';
     margin-right: .16rem;
+    font-family: 'icomoon';
   }
   .company h5 {
     position:absolute;
@@ -191,10 +189,10 @@ i {
   }
  .company .agencyCompany {
     position: absolute;
-    font-size: .64rem;
     top: 1.36rem;
     left:-0.2rem;
     margin: .4rem 0 0 .8rem;
+    font-size: .64rem;
   }
   .company .staffNumber {
     position: absolute;
@@ -210,23 +208,24 @@ i {
   }
   .myAgency {
     position: relative;
+    flex: 1;
+    margin-left: .4rem;
+    height: 4.6rem;
+    border-radius: .32rem;
+    box-shadow: .08rem .08rem .16rem #ccc;
+    background:rgba(45, 108, 237, 1);
+    color: #fff;
     overflow: hidden;
-      flex: 1;
-      margin-left: .4rem;
-      background:rgba(45, 108, 237, 1);
-      height: 4.6rem;
-      border-radius: .32rem;
-      box-shadow: .08rem .08rem .16rem #ccc;
-      color: #fff;
-  }
+
+    }
   .myAgency span:nth-child(1) {
     display: inline-block;
     position: absolute;
     top: -2.08rem;
     right: -1.28rem;
-    border-radius: 50%;
     width: 6.2rem;
     height: 6.2rem;
+    border-radius: 50%;
     background-color: #265ef1;  
   }
   .myAgency span:nth-child(2) {
@@ -234,9 +233,9 @@ i {
     position: absolute;
     top: 50px;
     left: -3.88rem;
-    border-radius: 50%;
     width: 6.2rem;
     height: 6.2rem;
+    border-radius: 50%;
     background-color: #265ef1;  
   }
   .myAgency h5 {
@@ -249,17 +248,17 @@ i {
     content: '实';
     padding: 0 .16rem 0;
     margin-right: .2rem;
+    border-radius: .16rem;
+    background-color: #fff;
     color: #265fee;
     font-size: .48rem;
     font-weight: 900;
-    border-radius: .16rem;
-    background-color: #fff;
   }
  .myAgency .order {
     position: absolute;
-    font-size: .64rem;
     top: 1.36rem;
     margin: .4rem 0 0 .8rem;
+    font-size: .64rem;
   }
   .myAgency .popularity {
     position: absolute;
@@ -279,34 +278,35 @@ i {
     margin-left: .28rem;
     width: .56rem;
     height: .56rem;
+    background-color: #fff;
     border-radius: 50%;
     color: #265fee;
     line-height: .56rem;
     text-align: center;
-    background-color: #fff;
+
   }
   .mainMiddle {
+    display: flex;
     margin-top: .4rem;
     width: 100%;
-    display: flex;
     color: #fff;
     .myCollection {
       position: relative;
-      overflow: hidden;
       flex: 1;
-      background-color: rgba(252, 187, 107,.9);
       height: 4.6rem;
       border-radius: .32rem;
       box-shadow: .08rem .08rem .16rem #ccc;
+      background-color: rgba(252, 187, 107,.9);
       color: #fff;
-       span:nth-child(1) {
+      overflow: hidden;
+      span:nth-child(1) {
         display: inline-block;
         position: absolute;
         top: -2.08rem;
         right: -1.28rem;
-        border-radius: 50%;
         width: 6.2rem;
         height: 6.2rem;
+        border-radius: 50%;
         background-color: #f8a442;  
       }
        span:nth-child(2) {
@@ -314,9 +314,9 @@ i {
         position: absolute;
         top: 50px;
         left: -3.88rem;
-        border-radius: 50%;
         width: 6.2rem;
         height: 6.2rem;
+        border-radius: 50%;
         background-color: #f8a442;  
       }
         h5 {
@@ -327,43 +327,43 @@ i {
         }
         .collectionNumber {
           position: absolute;
-          font-size: .64rem;
           top: 1.36rem;
           left: -.2rem;
           margin: .4rem 0 0 .8rem;
+          font-size: .64rem;
         }
     }
     .mainMiddleRight  {
       display: flex;
       flex-direction: column;
-        flex: 1;
-        margin-left: .4rem;
-        height: 4.6rem;
+      flex: 1;
+      margin-left: .4rem;
+      height: 4.6rem;
         div {
           flex: 1;
           height: 2.2rem;
           border-radius: .32rem;
         }
         .myMessage {
-          background: rgba(250, 139, 145, .9);
           position: relative;
-          overflow: hidden;
+          background: rgba(250, 139, 145, .9);
           box-shadow: .08rem .08rem .16rem #ccc;
+          overflow: hidden;
           & span:nth-child(1) {
-            width: 5.6rem;
-            height: 5.6rem;
             position: absolute;
             top:-3.2rem;
             right: -0.6rem;
-            background-color: #fd686a;
-            border-radius: 50%;
-          }
-          & span:nth-child(2) {
             width: 5.6rem;
             height: 5.6rem;
+            border-radius: 50%;
+            background-color: #fd686a;
+          }
+          & span:nth-child(2) {
             position: absolute;
             top: .2rem;
             left: -3.44rem;
+            width: 5.6rem;
+            height: 5.6rem;
             background-color: #fd686a;
             border-radius: 50%;
           }
@@ -382,25 +382,25 @@ i {
         }
         .myClue {
           position: relative;
-          overflow: hidden;
           margin-top: .2rem;
           box-shadow: .08rem .08rem .16rem #ccc;
           background: rgba(247, 220, 107, .9);
+          overflow: hidden;
           & span:nth-child(1) {
-            width: 5.6rem;
-            height: 5.6rem;
             position: absolute;
             top:-3.2rem;
             right: -0.6rem;
+            width: 5.6rem;
+            height: 5.6rem;
             background-color: #f8c840;
             border-radius: 50%;
           }
           & span:nth-child(2) {
-            width: 5.6rem;
-            height: 5.6rem;
             position: absolute;
             top: .2rem;
             left: -3.44rem;
+            width: 5.6rem;
+            height: 5.6rem;
             background-color: #f8c840;
             border-radius: 50%;
           }
@@ -420,15 +420,15 @@ i {
     }
   }
   .mainBottom {
-    box-shadow: .08rem .08rem .16rem #ccc;
     position: relative;
     margin-top: .4rem;
     width: 100%;
     height: 2.6rem;
     background:rgba(124, 85, 252, .9);
     border-radius: .32rem;
-    overflow: hidden;
+    box-shadow: .08rem .08rem .16rem #ccc;
     color: #fff;
+    overflow: hidden;
     & span:nth-child(1) {
       display: inline-block;
       position: absolute;
@@ -451,16 +451,15 @@ i {
     }
     h6 {
       position: absolute;
-      font-size: .72rem;
       top: -1.32rem;
       margin-left: 1.2rem;
-      
+      font-size: .72rem;
     }
     p {
       position:absolute;
       top: .76rem;
-      font-size: .64rem;
       margin-left: 1.2rem;
+      font-size: .64rem;
       color:#cfb9ff;
     }
   }
@@ -474,7 +473,7 @@ i {
       margin: 0;
     }
      h6 {
-       margin: 0;
+      margin: 0;
       font-size: .72rem;
       font-weight: 400;
       color: #626262;
@@ -502,11 +501,10 @@ i {
     }
   }
   .footer {
-    
     position: relative;
-    font-size: .56rem;
-    border-top: 1px solid #ddd;
     height: 1.6rem;
+    border-top: 1px solid #ddd;
+    font-size: .56rem;
     &::before {
       content: '';
       display: inline-block;
@@ -520,34 +518,34 @@ i {
       border-radius: 50%;
     }
     .policy {
-      width: 5.6rem;
       float: left;
+      width: 5.6rem;
       line-height: 1.6rem;
       text-align: center;
       &:nth-child(1) i {
-        font-family: 'icomoon';
         display: inline-block;
+        font-family: 'icomoon';
         font-size: .8rem;
       }
     }
     .nearbyAgency {
       position: absolute;
-      height: 2.6rem;
-      width: 2.6rem;
       top: -0.56rem;
       left: 50%;
       transform: translateX(-50%);
+      height: 2.6rem;
+      width: 2.6rem;
       background: -webkit-linear-gradient(left bottom,#3b8c9d,#a9d3c7);
       border-radius: 50%;
+      box-shadow:1px 1px 5px rgb(235, 233, 233),1px -1px 5px rgb(235, 233, 233),-1px 1px 5px rgb(235, 233, 233),-1px -1px 5px rgb(235, 233, 233);
       color: #fff;
       text-align: center;
-      box-shadow:1px 1px 5px rgb(235, 233, 233),1px -1px 5px rgb(235, 233, 233),-1px 1px 5px rgb(235, 233, 233),-1px -1px 5px rgb(235, 233, 233);
       i {
         display: inline-block;
-        font-family: 'icomoon';
-        font-size: 1.2rem;
         transform-origin: center;
         transform: rotate(30deg);
+        font-family: 'icomoon';
+        font-size: 1.2rem;
       }
       p{ 
         position: absolute;
@@ -557,38 +555,36 @@ i {
       }
     }
     .myInterface {
-      width: 5.6rem;
       float: right;
+      width: 5.6rem;
       line-height: 1.6rem;
       color: #448d93;
       text-align: center;
       i {
+        position: relative;
+        padding-right: .32rem;
         width: .8rem;
         height: .8rem;
-        position: relative;
         font-family: 'icomoon';
-        padding-right: .32rem;
         color:#459f9d;
         font-size: .88rem;
-        vertical-align:top;
         text-shadow: 2px 2px 2px #d2efed,2px -2px 2px #d2efed,-2px 2px 2px #d2efed,-2px -2px 2px #d2efed;
+        vertical-align:top;
         &::before {
-          z-index: -1;
-          content: '99';
-          color: #fff;
+          position: absolute;
+          top: -0.28rem;
+          right: .12rem;
           height: .48rem;
           width: .48rem;
           border-radius: 50%;
           background-color: red;
+          content: '99';
+          color: #fff;
           font-size: .32rem;
-          position: absolute;
           line-height: .48rem;
           text-shadow: none;
-          top: -0.28rem;
-          right: .12rem;
+          z-index: -1;
         }
         }
     }
-    
-
    }

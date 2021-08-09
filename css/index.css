@@ -136,7 +136,8 @@ i {
   color: #fff;
   overflow: hidden;
 }
-.company span:nth-child(1) {
+.company::before {
+  content: '';
   display: inline-block;
   position: absolute;
   top: -2.08rem;
@@ -146,7 +147,8 @@ i {
   border-radius: 50%;
   background-color: #64b1ab;
 }
-.company span:nth-child(2) {
+.company::after {
+  content: '';
   display: inline-block;
   position: absolute;
   top: 50px;
@@ -155,6 +157,7 @@ i {
   height: 6.2rem;
   border-radius: 50%;
   background-color: #64b1ab;
+  z-index: -1;
 }
 .company .authentication {
   box-sizing: border-box;
@@ -171,7 +174,7 @@ i {
   font-size: 0.4rem;
   color: #64b1ab;
 }
-.company span:nth-child(3)::before {
+.company .authentication::before {
   content: '\e902';
   margin-right: 0.16rem;
   font-family: 'icomoon';
@@ -212,7 +215,8 @@ i {
   color: #fff;
   overflow: hidden;
 }
-.myAgency span:nth-child(1) {
+.myAgency::before {
+  content: '';
   display: inline-block;
   position: absolute;
   top: -2.08rem;
@@ -222,7 +226,8 @@ i {
   border-radius: 50%;
   background-color: #265ef1;
 }
-.myAgency span:nth-child(2) {
+.myAgency::after {
+  content: '';
   display: inline-block;
   position: absolute;
   top: 50px;
@@ -253,6 +258,7 @@ i {
   top: 1.36rem;
   margin: 0.4rem 0 0 0.8rem;
   font-size: 0.64rem;
+  z-index: 1;
 }
 .myAgency .popularity {
   position: absolute;
@@ -265,6 +271,7 @@ i {
   right: 0.6rem;
   top: 3rem;
   font-size: 0.48rem;
+  z-index: 1;
 }
 .myAgency .member::after {
   content: '?';
@@ -294,7 +301,8 @@ i {
   color: #fff;
   overflow: hidden;
 }
-.mainMiddle .myCollection span:nth-child(1) {
+.mainMiddle .myCollection::before {
+  content: '';
   display: inline-block;
   position: absolute;
   top: -2.08rem;
@@ -304,7 +312,8 @@ i {
   border-radius: 50%;
   background-color: #f8a442;
 }
-.mainMiddle .myCollection span:nth-child(2) {
+.mainMiddle .myCollection::after {
+  content: '';
   display: inline-block;
   position: absolute;
   top: 50px;
@@ -313,6 +322,7 @@ i {
   height: 6.2rem;
   border-radius: 50%;
   background-color: #f8a442;
+  z-index: 1;
 }
 .mainMiddle .myCollection h5 {
   position: absolute;
@@ -344,8 +354,10 @@ i {
   background: rgba(250, 139, 145, 0.9);
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
   overflow: hidden;
+  z-index: -1;
 }
-.mainMiddle .mainMiddleRight .myMessage span:nth-child(1) {
+.mainMiddle .mainMiddleRight .myMessage::before {
+  content: '';
   position: absolute;
   top: -3.2rem;
   right: -0.6rem;
@@ -353,8 +365,10 @@ i {
   height: 5.6rem;
   border-radius: 50%;
   background-color: #fd686a;
+  z-index: -1;
 }
-.mainMiddle .mainMiddleRight .myMessage span:nth-child(2) {
+.mainMiddle .mainMiddleRight .myMessage::after {
+  content: '';
   position: absolute;
   top: 0.2rem;
   left: -3.44rem;
@@ -362,6 +376,7 @@ i {
   height: 5.6rem;
   background-color: #fd686a;
   border-radius: 50%;
+  z-index: -1;
 }
 .mainMiddle .mainMiddleRight .myMessage h6 {
   position: absolute;
@@ -381,8 +396,10 @@ i {
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
   background: rgba(247, 220, 107, 0.9);
   overflow: hidden;
+  z-index: -2;
 }
-.mainMiddle .mainMiddleRight .myClue span:nth-child(1) {
+.mainMiddle .mainMiddleRight .myClue::before {
+  content: '';
   position: absolute;
   top: -3.2rem;
   right: -0.6rem;
@@ -391,7 +408,8 @@ i {
   background-color: #f8c840;
   border-radius: 50%;
 }
-.mainMiddle .mainMiddleRight .myClue span:nth-child(2) {
+.mainMiddle .mainMiddleRight .myClue::after {
+  content: '';
   position: absolute;
   top: 0.2rem;
   left: -3.44rem;
@@ -399,6 +417,7 @@ i {
   height: 5.6rem;
   background-color: #f8c840;
   border-radius: 50%;
+  z-index: -1;
 }
 .mainMiddle .mainMiddleRight .myClue h6 {
   position: absolute;
@@ -422,8 +441,10 @@ i {
   box-shadow: 0.08rem 0.08rem 0.16rem #ccc;
   color: #fff;
   overflow: hidden;
+  z-index: -1;
 }
-.mainBottom span:nth-child(1) {
+.mainBottom::before {
+  content: '';
   display: inline-block;
   position: absolute;
   top: -2.8rem;
@@ -433,7 +454,8 @@ i {
   border-radius: 100%;
   background-color: #6b3efd;
 }
-.mainBottom span:nth-child(2) {
+.mainBottom::after {
+  content: '';
   display: inline-block;
   position: absolute;
   top: 1rem;
@@ -442,6 +464,7 @@ i {
   height: 30px;
   border-top-right-radius: 100%;
   background-color: #6b3efd;
+  z-index: -1;
 }
 .mainBottom h6 {
   position: absolute;

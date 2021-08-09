@@ -141,7 +141,8 @@ i {
     overflow: hidden;
 
   }
-  .company span:nth-child(1) {
+  .company::before {
+    content: '';
     display: inline-block;
     position: absolute;
     top: -2.08rem;
@@ -151,7 +152,8 @@ i {
     border-radius: 50%;
     background-color: #64b1ab;  
   }
-  .company span:nth-child(2) {
+  .company::after{
+    content: '';
     display: inline-block;
     position: absolute;
     top: 50px;
@@ -159,7 +161,8 @@ i {
     width: 6.2rem;
     height: 6.2rem;
     border-radius: 50%;
-    background-color: #64b1ab;  
+    background-color: #64b1ab;
+    z-index: -1;  
   }
   .company .authentication {
     box-sizing: border-box;
@@ -176,7 +179,7 @@ i {
     font-size: .4rem;
     color: #64b1ab;
   }
-  .company span:nth-child(3)::before {
+  .company .authentication::before {
     content: '\e902';
     margin-right: .16rem;
     font-family: 'icomoon';
@@ -218,26 +221,28 @@ i {
     overflow: hidden;
 
     }
-  .myAgency span:nth-child(1) {
-    display: inline-block;
-    position: absolute;
-    top: -2.08rem;
-    right: -1.28rem;
-    width: 6.2rem;
-    height: 6.2rem;
-    border-radius: 50%;
-    background-color: #265ef1;  
-  }
-  .myAgency span:nth-child(2) {
-    display: inline-block;
-    position: absolute;
-    top: 50px;
-    left: -3.88rem;
-    width: 6.2rem;
-    height: 6.2rem;
-    border-radius: 50%;
-    background-color: #265ef1;  
-  }
+    .myAgency::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: -2.08rem;
+      right: -1.28rem;
+      width: 6.2rem;
+      height: 6.2rem;
+      border-radius: 50%;
+      background-color: #265ef1;  
+    }
+    .myAgency::after{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 50px;
+      left: -3.88rem;
+      width: 6.2rem;
+      height: 6.2rem;
+      border-radius: 50%;
+      background-color: #265ef1;
+    }
   .myAgency h5 {
     position:absolute;
     top: -0.56rem;
@@ -259,6 +264,7 @@ i {
     top: 1.36rem;
     margin: .4rem 0 0 .8rem;
     font-size: .64rem;
+    z-index: 1;
   }
   .myAgency .popularity {
     position: absolute;
@@ -271,6 +277,7 @@ i {
     right: .6rem;
     top: 3rem;
     font-size: .48rem;
+    z-index: 1;
   }
   .myAgency .member::after {
     content: '?';
@@ -299,7 +306,8 @@ i {
       background-color: rgba(252, 187, 107,.9);
       color: #fff;
       overflow: hidden;
-      span:nth-child(1) {
+      &::before {
+        content: '';
         display: inline-block;
         position: absolute;
         top: -2.08rem;
@@ -309,7 +317,8 @@ i {
         border-radius: 50%;
         background-color: #f8a442;  
       }
-       span:nth-child(2) {
+      &::after{
+        content: '';
         display: inline-block;
         position: absolute;
         top: 50px;
@@ -317,7 +326,8 @@ i {
         width: 6.2rem;
         height: 6.2rem;
         border-radius: 50%;
-        background-color: #f8a442;  
+        background-color: #f8a442;
+        z-index: 1;
       }
         h5 {
           position:absolute;
@@ -349,7 +359,9 @@ i {
           background: rgba(250, 139, 145, .9);
           box-shadow: .08rem .08rem .16rem #ccc;
           overflow: hidden;
-          & span:nth-child(1) {
+          z-index: -1;
+          &::before{
+            content: '';
             position: absolute;
             top:-3.2rem;
             right: -0.6rem;
@@ -357,8 +369,10 @@ i {
             height: 5.6rem;
             border-radius: 50%;
             background-color: #fd686a;
+            z-index: -1;
           }
-          & span:nth-child(2) {
+          &::after {
+            content: '';
             position: absolute;
             top: .2rem;
             left: -3.44rem;
@@ -366,6 +380,7 @@ i {
             height: 5.6rem;
             background-color: #fd686a;
             border-radius: 50%;
+            z-index: -1;
           }
           h6 {
             position: absolute;
@@ -386,7 +401,9 @@ i {
           box-shadow: .08rem .08rem .16rem #ccc;
           background: rgba(247, 220, 107, .9);
           overflow: hidden;
-          & span:nth-child(1) {
+          z-index: -2;
+          &::before{
+            content: '';
             position: absolute;
             top:-3.2rem;
             right: -0.6rem;
@@ -395,7 +412,8 @@ i {
             background-color: #f8c840;
             border-radius: 50%;
           }
-          & span:nth-child(2) {
+          &::after{
+            content: '';
             position: absolute;
             top: .2rem;
             left: -3.44rem;
@@ -403,6 +421,7 @@ i {
             height: 5.6rem;
             background-color: #f8c840;
             border-radius: 50%;
+            z-index: -1;
           }
           h6 {
             position: absolute;
@@ -429,7 +448,9 @@ i {
     box-shadow: .08rem .08rem .16rem #ccc;
     color: #fff;
     overflow: hidden;
-    & span:nth-child(1) {
+    z-index: -1;
+    &::before{
+      content: '';
       display: inline-block;
       position: absolute;
       top: -2.8rem;
@@ -439,7 +460,8 @@ i {
       border-radius: 100%;
       background-color: #6b3efd;
     }
-    & span:nth-child(2) {
+    &::after {
+      content: '';
       display: inline-block;
       position: absolute;
       top: 1rem;
@@ -448,6 +470,7 @@ i {
       height: 30px;
       border-top-right-radius: 100%;
       background-color: #6b3efd;
+      z-index: -1;
     }
     h6 {
       position: absolute;
